@@ -1,9 +1,11 @@
 **Stage 1B**: Testable Profile Card
 
 A high-performance, accessible, and responsive Profile Card built with semantic HTML5, modern CSS, and vanilla JavaScript. This project was developed as part of the Frontend Wizards track to demonstrate proficiency in DOM manipulation, accessibility (A11y), and responsive design.
-🚀 Live Demo
 
-[Insert your Live URL here, e.g., Netlify/Vercel link]
+🚀 Live Demo
+https://hng-stage-1b-frontend.vercel.app/
+
+
 🛠 Features & Design Decisions
 1. Semantic Architecture
 
