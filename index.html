@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+          <figure class="avatar-wrapper">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Profile picture of the user"
+              data-testid="test-user-avatar"
+              id="avatar-image"
+            />
+            <input type="file" id="avatar-upload" accept="image/*" hidden />
+            <button type="button" id="upload-trigger" class="btn-secondary">
+              Update Photo
+            </button>
+          </figure>
+
+          <div class="identity">
+            <h1 data-testid="test-user-name">Okosun Ehimare Jeffery</h1>
+            <p data-testid="test-user-bio">
+              Frontend Developer specializing in accessible UI and vanilla
+              JavaScript. Passionate about clean code and modern CSS.
+            </p>
+          </div>
+        </header>
+
+        <section class="time-container">
+          <strong>Current Epoch:</strong>
+          <span data-testid="test-user-time" aria-live="polite"
+            >Loading...</span
+          >
+        </section>
+
+        <nav class="social-nav" aria-label="Social media links">
+          <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+              <a
+                href="https://github.com/mariioox"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/jefferyokosun"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/mariiodegen"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="interests">
+          <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Street Photography</li>
+              <li>Skateboarding</li>
+              <li>Anime</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Non-semantic HTML</li>
+              <li>Boring People</li>
+              <li>Unlabeled Buttons</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
